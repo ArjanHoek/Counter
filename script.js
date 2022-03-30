@@ -34,15 +34,4 @@ const startByContainer = function (element, time = 5000, step) {
   counters.forEach(counter => startByCounter(counter, time));
 };
 
-// startByContainer(countUpContainer, 2000);
-
-const withDots = val => {
-  const intPart = val.split(',')[0];
-  if (intPart.length <= 3) return val;
-
-  return null;
-};
-
-const converted = withDots('1000,52');
-
-console.log(converted);
+startByContainer(countUpContainer, 2000);
